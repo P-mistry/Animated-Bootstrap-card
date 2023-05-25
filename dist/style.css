@@ -1,0 +1,68 @@
+body {
+  height: 100%;
+  background: #2A2E45;
+  color: #FFF;
+  font-family: "montserrat";
+}
+body:before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: repeating-linear-gradient(120deg, #343956, #343956 2px, transparent 2px, transparent 17.5vw);
+  position: absolute;
+}
+
+.card-sliders {
+  overflow: hidden;
+  height: 95vh;
+}
+.card-sliders .container {
+  height: 100% !important;
+}
+.card-sliders .container .row {
+  height: 100%;
+}
+.card-sliders .card-decks .card-deck {
+  display: none;
+}
+.card-sliders .card-decks .card-deck.deck-active {
+  display: flex;
+}
+.card-sliders .card-decks .card-deck .card {
+  font-size: 0.8rem;
+  border: 0;
+  border-radius: 1.25rem;
+  box-shadow: 0 10px 20px 2px #181A28;
+  color: #FFF;
+  height: 300px;
+  overflow: hidden;
+}
+.card-sliders .card-decks .card-deck .card h1, .card-sliders .card-decks .card-deck .card h2, .card-sliders .card-decks .card-deck .card h3, .card-sliders .card-decks .card-deck .card h4, .card-sliders .card-decks .card-deck .card h5, .card-sliders .card-decks .card-deck .card h6 {
+  font-weight: bold;
+}
+.card-sliders .card-decks .card-deck .card a {
+  color: #3BCEAC;
+}
+.card-sliders .card-decks .card-deck .card img {
+  width: 200%;
+  height: 200%;
+  object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.card-sliders .card-decks .card-deck .card .card-img-overlay {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* Custom animate.css delay */
+.animated.delay-02s {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+.animated.delay-04s {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
